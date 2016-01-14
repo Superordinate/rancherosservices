@@ -1,5 +1,5 @@
 registrator:
-  image: gliderlabs/consul
+  image: gliderlabs/registrator
   net: "host"
   volumes: 
    - /var/run/docker.sock:/tmp/docker.sock
