@@ -5,3 +5,5 @@ consul:
    - 8500:8500
    - 8600:53/udp
   command: -bootstrap -client 0.0.0.0 -ui-dir /ui
+  labels: 
+   - io.rancher.os.scope=system
