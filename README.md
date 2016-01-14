@@ -7,13 +7,13 @@ labels:
 If you want this to run on system docker, instead of the "userspace" docker.  
 
 
-##if you're like ?!  here's a quick update:  RancherOS has 2 docker engines in it:
+####if you're like ?!  here's a quick update:  RancherOS has 2 docker engines in it:
 
-###1) System Docker
+#####1) System Docker
 
 system-docker ps (shows you system services)
 
-###2) User Docker
+#####2) User Docker
 
 docker ps (shows you your usual docker containers)
 
