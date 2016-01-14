@@ -1,5 +1,5 @@
 prometheus:
-  build: "prom/"
+  image: prom/prometheus:latest
   ports:
     - "9090:9090"
   links:
@@ -8,7 +8,6 @@ prometheus:
   labels: 
          - "name=prometheus"
          - "description=Core of Promethues"
-         - "version=0.16.1"
 
 exporter:
   image: "prom/container-exporter"
