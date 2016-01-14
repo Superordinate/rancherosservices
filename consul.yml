@@ -1,9 +1,14 @@
 consul:
   image: gliderlabs/consul-server:latest
   ports:
-   - 8400:8400
-   - 8500:8500
-   - 8600:53/udp
-  command: -bootstrap -client 0.0.0.0 -ui-dir /ui
+   - 10.240.0.3:8300:8300
+   - 10.240.0.3:8301:8301
+   - 10.240.0.3:8301:8301/udp
+   - 10.240.0.3:8302:8302
+   - 10.240.0.3:8302:8302/udp
+   - 10.240.0.3:8400:8400
+   - 10.240.0.3:8500:8500
+   - 172.17.42.1:53:53/udp
+  command: -bootstrap-expect 3 -advertise 10.240.0.3 -ui-dir /ui
   labels: 
    - io.rancher.os.scope=system
