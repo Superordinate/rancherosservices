@@ -4,8 +4,5 @@ registrator:
   volumes: 
    - /var/run/docker.sock:/tmp/docker.sock
   command: consul://localhost:8500
-
-
-
-
-
+  labels: 
+   - io.rancher.os.scope=system
